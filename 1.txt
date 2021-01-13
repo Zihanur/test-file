@@ -1,0 +1,20 @@
+id=[]
+sum=0
+print('Enter your five digits ID input one and enter presses : ')
+for i in range(5):
+	e= int(input())
+	id.append(e)
+	sum=sum+e
+print("Your last five digits id is: ",id)
+print("Sum of your last five id : ",sum)
+if sum%2==0:
+	print("Sum is even number")
+else:
+	print("Sum is odd number")
+for i in range(2,sum):
+	if sum%i==0:
+		print("Sum is not prime number")
+		break
+else:
+	print("Sum is prime number")
+
